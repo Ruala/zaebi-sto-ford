@@ -4,9 +4,8 @@ features:
 - uikit
 - less
 - jquery
-- es6
+- es7, stage-0
 
 scripts:
-- dev - development with dev server
-- start - development build in dist folder
+- start - development with dev server
 - build - production
