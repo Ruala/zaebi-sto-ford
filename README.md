@@ -1,11 +1,11 @@
 # webpack-uikit
 
 features:
-- uikit
+- uikit v3.0.0
 - less
-- jquery
 - es7, stage-0
-- font awesome 5
+- jquery v3.3.1 (global variable $, import not needed)
+- font awesome v5.7.2
 
 scripts:
 - start - development with dev server

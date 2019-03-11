@@ -10,7 +10,7 @@ const dest = Path.join(__dirname, '../dist');
 
 module.exports = {
     entry: {
-        index: Path.resolve(__dirname, '../src/scripts/index'),
+        app: Path.resolve(__dirname, '../src/scripts/index'),
         vendors: Path.resolve(__dirname, '../src/scripts/vendors/index'),
     },
     output: {
