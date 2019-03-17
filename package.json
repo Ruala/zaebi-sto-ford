@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-free": "^5.7.2",
     "jquery": "^3.3.1",
     "select2": "^4.0.6-rc.1",
-    "uikit": "^3.0.0-rc.10"
+    "uikit": "^3.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
