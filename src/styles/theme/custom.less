@@ -1,0 +1,123 @@
+body ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: rgba(153, 153, 153, .1);
+  border-radius: 5px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgba(@global-secondary-background, .5);
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease
+}
+
+body ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(@global-secondary-background, .5)
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: @global-secondary-background;
+}
+
+//Page variables
+
+@header-height: 60px;
+@footer-height: 51px;
+@page-padding: 15px;
+
+.page {
+  padding: @header-height @page-padding @footer-height;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: @page-padding @width-large-width @page-padding @width-medium-width;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  position: fixed;
+  top: calc(@header-height + @page-padding);
+  bottom: calc(@footer-height + @page-padding);
+
+  padding-bottom: 2px;
+  border: 1px solid @global-secondary-background;
+  border-radius: 5px;
+
+  &__inner {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding: 15px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.01) 95%, rgba(@global-secondary-background, 1) 100%);
+    background-clip: padding-box;
+    border-bottom: 4px double @global-secondary-background;
+    border-radius: 5px;
+
+    &_padding-top {
+      padding-top: 60px;
+    }
+  }
+
+  &_left {
+    left: @page-padding;
+  }
+
+  &_right {
+    right: @page-padding;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 70%, rgba(@global-secondary-background, 1) 100%);
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.header,
+.footer {
+  z-index: 980;
+}
+
+.footer {
+  padding: 15px;
+  color: #000;
+  background-color: #ddd;
+}
+
+.map {
+  height: 400px;
+}
+
+@media (max-width: 1199px) {
+
+  .content {
+    padding: 15px 0;
+  }
+
+  .page {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+
+@media (max-width: 959px) {
+
+
+}
+
+@media (max-width: 639px) {
+
+
+}
